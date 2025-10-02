@@ -1,3 +1,4 @@
+// tailwind.config.ts
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -14,13 +15,9 @@ const config: Config = {
         'acid-yellow': '#FFE600',
         'neon-green': '#39FF14',
       },
-      spacing: {
-        '18': '4.5rem',
-        '22': '5.5rem',
-      },
       fontFamily: {
-        futura: ['Futura PT', 'Futura', 'sans-serif'],
-        avenir: ['Avenir Next', 'Avenir', 'sans-serif'],
+        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['Outfit', 'sans-serif'],
         mono: ['IBM Plex Mono', 'monospace'],
       },
     },
