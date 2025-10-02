@@ -5,7 +5,7 @@
   "homepage": "https://github.com/sanity-io/sanity-template-nextjs-clean#readme",
   "bugs": { "url": "https://github.com/sanity-io/sanity-template-nextjs-clean/issues" },
   "engines": { "node": ">=18.17 <21", "pnpm": ">=9" },
-  "packageManager": "pnpm@10",
+  "packageManager": "pnpm@10.0.0",
   "workspaces": ["studio", "frontend"],
   "scripts": {
     "dev": "npm-run-all --parallel --print-label dev:*",
