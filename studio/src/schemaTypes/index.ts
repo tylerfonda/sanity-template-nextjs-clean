@@ -1,19 +1,30 @@
-import caseStudy from './caseStudy'
-import teamMember from './teamMember'
-import service from './service'
-import homepage from './homepage'
-import page from './page'
-import post from './post'
-import person from './person'
-import settings from './settings'
+import {person} from './documents/person'
+import {page} from './documents/page'
+import {post} from './documents/post'
+import {caseStudy} from './documents/caseStudy'
+import {teamMember} from './documents/teamMember'
+import {service} from './documents/service'
+import {homepage} from './documents/homepage'
+import {callToAction} from './objects/callToAction'
+import {infoSection} from './objects/infoSection'
+import {settings} from './singletons/settings'
+import {link} from './objects/link'
+import {blockContent} from './objects/blockContent'
 
 export const schemaTypes = [
+  // Singletons
+  settings,
   homepage,
-  service,
-  caseStudy,
-  teamMember,
+  // Documents
   page,
   post,
   person,
-  settings
+  caseStudy,
+  teamMember,
+  service,
+  // Objects
+  blockContent,
+  infoSection,
+  callToAction,
+  link,
 ]
