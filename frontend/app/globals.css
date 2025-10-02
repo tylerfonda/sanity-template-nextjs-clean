@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,13 +14,13 @@
 @layer base {
   body {
     @apply bg-white text-black;
-    font-family: 'Avenir Next', 'Avenir', -apple-system, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 18px;
     line-height: 1.6;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Futura PT', 'Futura', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: 700;
   }
 
@@ -48,52 +48,15 @@
 }
 
 @layer components {
-  .container-custom {
-    @apply max-w-[1440px] mx-auto px-20;
-  }
-
-  @media (max-width: 1024px) {
-    .container-custom {
-      @apply px-10;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .container-custom {
-      @apply px-6;
-    }
-  }
-
   .btn-primary {
     @apply bg-black text-white uppercase text-sm font-medium px-8 py-4 transition-colors duration-300;
-    font-family: 'Futura PT', 'Futura', sans-serif;
+    font-family: 'Outfit', sans-serif;
   }
 
   .btn-primary:hover {
     background-color: var(--color-hot-pink);
   }
 
-  .btn-secondary {
-    @apply border-2 border-black text-black uppercase text-sm font-medium px-8 py-4 transition-colors duration-300;
-    font-family: 'Futura PT', 'Futura', sans-serif;
-  }
-
-  .btn-secondary:hover {
-    border-color: var(--color-hot-pink);
-    color: var(--color-hot-pink);
-  }
-
-  .image-grayscale {
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-  }
-
-  .image-grayscale:hover {
-    filter: grayscale(0%);
-  }
-}
-
-@layer utilities {
   .text-mono {
     font-family: 'IBM Plex Mono', monospace;
   }
